@@ -1,48 +1,104 @@
-# 🔐 File Encryption/Decryption Tool
-
-## 📌 Description
-This is a Python-based tool to **secure files** by converting them into encrypted formats using **Fernet symmetric encryption**. It prevents unauthorized access and ensures data confidentiality.
+Here's the full **README** text combining both projects, formatted cleanly for you to save as a single `README.md` file:
 
 ---
 
-## ⚙️ Features
-- 🔑 Generate secure encryption keys
-- 🔒 Encrypt any type of file
-- 🔓 Decrypt files only with the correct key
-- 📂 Command-line file selector
-- 🛡 Based on `cryptography` package
+# Projects: File Encryption/Decryption Tool & Sentiment Analysis (IMDB)
 
 ---
 
-## 🛠 Installation
-Install dependencies:
+## Project 1: File Encryption/Decryption Tool 🔐
+
+### Description
+
+A Python command-line tool to encrypt and decrypt files securely using symmetric encryption (Fernet). It transforms files into an unreadable format unless decrypted with the correct key, protecting sensitive data.
+
+### Features
+
+* Generate and save encryption keys securely
+* Encrypt any file type
+* Decrypt encrypted files using the key
+* Easy-to-use command-line interface
+* Based on Python’s `cryptography` package
+
+### Installation
+
 ```bash
 pip install cryptography
+```
+
+### Usage
+
+1. Run the script:
+
+   ```bash
+   python model2.py
+   ```
+2. Choose from the menu:
+
+   * Generate a key
+   * Encrypt a file
+   * Decrypt a file
+3. Follow prompts to specify file names.
+
+### Important Notes
+
+* Keep your key (`secret.key`) safe; losing it means you cannot decrypt files.
+* Do not share the key and encrypted file together.
+* Supports all file formats (PDF, images, text, etc.).
 
 ---
 
-## 📄 `README.md` for: **Sentiment Analysis (IMDB)**
+## Project 2: Sentiment Analysis (IMDB Dataset) 💬
 
-```markdown
-# 💬 Sentiment Analysis Using IMDB Dataset
+### Description
 
-## 📌 Description
-This project implements a **sentiment analysis model** using machine learning on the IMDB dataset. It classifies text reviews as **positive** or **negative**, making it useful for understanding user opinion.
+This project uses machine learning to classify movie reviews from the IMDB dataset as positive or negative. It applies NLP preprocessing, TF-IDF vectorization, and Logistic Regression to analyze sentiment.
+
+### Features
+
+* Text preprocessing with NLTK
+* TF-IDF vectorization for feature extraction
+* Logistic Regression classifier
+* Metrics: accuracy, precision, recall, and f1-score
+* Predict sentiment on custom user input
+
+### Installation
+
+```bash
+pip install nltk scikit-learn
+```
+
+### Usage
+
+1. Run the script:
+
+   ```bash
+   python sentiment_model.py
+   ```
+2. View evaluation metrics after training.
+3. Enter custom reviews to get sentiment predictions.
+
+### Sample Output
+
+```
+Accuracy: 0.8425
+
+Classification Report:
+               precision    recall  f1-score   support
+
+         neg       0.86      0.85      0.86       218
+         pos       0.83      0.83      0.83       182
+
+    accuracy                           0.84       400
+```
 
 ---
 
-## 🎯 Objective
-To analyze movie reviews and identify the **emotional tone** (positive/negative) using NLP techniques and machine learning algorithms.
+## Author
+
+**Someshwar V**
+Department of Artificial Intelligence and Data Science
 
 ---
 
-## ⚙️ Features
-- Preprocessing using NLTK
-- TF-IDF vectorization
-- Logistic Regression for classification
-- Performance metrics: Accuracy, Precision, Recall, F1-score
-- Custom input prediction for new reviews
-
----
-
-## 📊 Sample Output
+You can copy this as your `README.md` for both projects in one place. Let me know if you want me to generate the actual `.md` file!
